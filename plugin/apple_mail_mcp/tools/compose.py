@@ -153,7 +153,9 @@ def _build_html_from_text(text_body):
     return (
         '<html><body style="font-family: -apple-system, BlinkMacSystemFont, '
         "'Segoe UI', Arial, sans-serif; line-height: 1.45; color: #111111;\">"
-        '<pre style="white-space: pre-wrap; font: inherit; margin: 0;">'
+        '<pre style="white-space: pre-wrap; margin: 0; font-family: '
+        "-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; "
+        'font-size: 13px;">'
         + safe_body
         + "</pre></body></html>"
     )
